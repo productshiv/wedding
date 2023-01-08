@@ -1,21 +1,17 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 function Landing() {
-  const [windowWidth, setWindowWidth] = useState(0)
-
-  useEffect(() => {
-    setWindowWidth(window.innerWidth)
-  }, [])
-
   return (
-    <img
-      src="landing.jpg"
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-      }}
+    <Image
+        fill
+        sizes='100vw'
+        src="/images/landing.jpg"
+        alt="Landing"
+        style={{
+          objectFit: 'cover',
+        }}
     />
   )
 }
