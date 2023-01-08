@@ -5,13 +5,13 @@ import Image from 'next/image'
 function Landing() {
   return (
     <Image
-        fill
-        sizes='100vw'
-        src="/images/landing.jpg"
-        alt="Landing"
-        style={{
-          objectFit: 'cover',
-        }}
+      fill
+      sizes='100vw'
+      src="/images/nest.png"
+      alt="Landing"
+      style={{
+        objectFit: 'cover',
+      }}
     />
   )
 }
